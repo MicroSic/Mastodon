@@ -21,7 +21,7 @@ module Mastodon
     end
 
     def suffix
-      '~hello'
+      '~ATM'
     end
 
     def to_a
