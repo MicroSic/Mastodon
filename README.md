@@ -1,4 +1,4 @@
-**Mastodon fork for <https://littlefo.rest>**
+**Mastodon fork for <https://toot.tantalum.life>**
 
 [![Maintainability](https://api.codeclimate.com/v1/badges/1644d6adc0f9d1bbae6a/maintainability)](https://codeclimate.com/github/mashirozx/mastodon/maintainability)
 [![DockerHub](https://img.shields.io/docker/pulls/mashirozx/mastodon.svg?logo=docker&color=2496ED)](https://hub.docker.com/r/mashirozx/mastodon)
@@ -6,9 +6,9 @@
 [![Build Dev Image](https://github.com/mashirozx/mastodon/actions/workflows/docker-build-dev.yml/badge.svg)](https://github.com/mashirozx/mastodon/actions/workflows/docker-build-dev.yml)
 [![Build Status](https://drone.2heng.xin/api/badges/mashirozx/mastodon/status.svg?ref=refs/heads/main)](https://drone.2heng.xin/mashirozx/mastodon)
 
-[//]: # ([![DeepSource]&#40;https://deepsource.io/gh/mashirozx/mastodon.svg/?label=active+issues&#41;]&#40;https://deepsource.io/gh/mashirozx/mastodon/?ref=repository-badge&#41;)
+[//]: # "[![DeepSource]&#40;https://deepsource.io/gh/mashirozx/mastodon.svg/?label=active+issues&#41;]&#40;https://deepsource.io/gh/mashirozx/mastodon/?ref=repository-badge&#41;"
 
-[//]: # ([![CircleCI]&#40;https://circleci.com/gh/mashirozx/mastodon.svg?style=svg&#41;]&#40;https://circleci.com/gh/tootsuite/mastodon&#41;)
+[//]: # "[![CircleCI]&#40;https://circleci.com/gh/mashirozx/mastodon.svg?style=svg&#41;]&#40;https://circleci.com/gh/tootsuite/mastodon&#41;"
 
 ## Highlighted Features
 
