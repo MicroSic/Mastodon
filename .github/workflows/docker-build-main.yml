@@ -35,7 +35,7 @@ jobs:
         uses: docker/metadata-action@v3
         id: meta
         with:
-          images: mashirozx/mastodon
+          images: microsic/mastodon
           flavor: |
             latest=auto
           tags: |
@@ -53,11 +53,11 @@ jobs:
           #   arg1=value1
           #   arg2=value2
           platforms: linux/amd64
-          cache-from: type=registry,ref=mashirozx/mastodon:latest
+          cache-from: type=registry,ref=microsic/mastodon:latest
           cache-to: type=inline
-          # tags: mashirozx/mastodon:alpha
+          # tags: microsic/mastodon:alpha
           tags: |
-            mashirozx/mastodon:alpha
-            mashirozx/mastodon:latest
-            mashirozx/mastodon:latest-amd64
-            mashirozx/mastodon:sha-${{steps.vars.outputs.sha_short}}
+            microsic/mastodon:alpha
+            microsic/mastodon:latest
+            microsic/mastodon:latest-amd64
+            microsic/mastodon:sha-${{steps.vars.outputs.sha_short}}
