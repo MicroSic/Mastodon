@@ -3,7 +3,6 @@
 [![Maintainability](https://api.codeclimate.com/v1/badges/1644d6adc0f9d1bbae6a/maintainability)](https://codeclimate.com/github/mashirozx/mastodon/maintainability)
 [![DockerHub](https://img.shields.io/docker/pulls/mashirozx/mastodon.svg?logo=docker&color=2496ED)](https://hub.docker.com/r/mashirozx/mastodon)
 [![Build Prod Image](https://github.com/mashirozx/mastodon/actions/workflows/docker-build-main.yml/badge.svg)](https://github.com/mashirozx/mastodon/actions/workflows/docker-build-main.yml)
-[![Build Dev Image](https://github.com/mashirozx/mastodon/actions/workflows/docker-build-dev.yml/badge.svg)](https://github.com/mashirozx/mastodon/actions/workflows/docker-build-dev.yml)
 [![Build Status](https://drone.2heng.xin/api/badges/mashirozx/mastodon/status.svg?ref=refs/heads/main)](https://drone.2heng.xin/mashirozx/mastodon)
 
 [//]: # "[![DeepSource]&#40;https://deepsource.io/gh/mashirozx/mastodon.svg/?label=active+issues&#41;]&#40;https://deepsource.io/gh/mashirozx/mastodon/?ref=repository-badge&#41;"
@@ -24,7 +23,7 @@
 
 ## Specifications
 
-This is a rebase fork of `tootsuite/mastodon`, all local changes are rebased on the top. To pull the latest commits of this repo, use `git reset --hard origin/master` instead of `git pull`.
+This is a rebase fork of `mastodon/mastodon`, all local changes are rebased on the top. To pull the latest commits of this repo, use `git reset --hard origin/master` instead of `git pull`.
 
 To enable the new custom features, please add the necessary configurations first according to the file end of `.env.production.sample`.
 
