@@ -1,4 +1,4 @@
-name: Build Prod Image (amd64)
+name: Build Universal Image
 
 on:
   push:
@@ -35,7 +35,7 @@ jobs:
         uses: docker/metadata-action@v3
         id: meta
         with:
-          images: microsic/mastodon
+          images: mashirozx/mastodon
           flavor: |
             latest=auto
           tags: |
@@ -49,15 +49,16 @@ jobs:
           context: .
           pull: true
           push: true
-          # build-args: |
-          #   arg1=value1
-          #   arg2=value2
-          platforms: linux/amd64
-          cache-from: type=registry,ref=microsic/mastodon:latest
+          platforms: linux/amd64,linux/arm64
+          cache-from: type=registry,ref=mashirozx/mastodon:latest
           cache-to: type=inline
-          # tags: microsic/mastodon:alpha
           tags: |
-            microsic/mastodon:alpha
-            microsic/mastodon:latest
-            microsic/mastodon:latest-amd64
-            microsic/mastodon:sha-${{steps.vars.outputs.sha_short}}
+            mashirozx/mastodon:latest
+            mashirozx/mastodon:sha-${{steps.vars.outputs.sha_short}}
+
+      - name: 🔖 Update repo description
+        uses: peter-evans/dockerhub-description@v2
+        with:
+          username: ${{ secrets.DOCKER_USERNAME }}
+          password: ${{ secrets.DOCKER_PASSWORD }}
+          repository: mashirozx/mastodon
