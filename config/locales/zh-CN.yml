@@ -1603,6 +1603,8 @@ zh-CN:
     title: "%{instance} 使用条款和隐私权政策"
   themes:
     bilibili-light: 哔哩哔哩(゜-゜)つロ干杯~
+    black-cat: 黑猫
+    cafe: 咖啡店
     contrast: Mastodon（高对比度）
     cybre-light: 老夫的少女心
     dark-blue: Mastodon (深色主题-群青)
@@ -1614,6 +1616,7 @@ zh-CN:
     dark-red: Mastodon（深色主题-红绯）
     dark-yellow: Mastodon（深色主题-向日葵）
     default: Mastodon（暗色主题）
+    flora: 芙萝拉   
     forest: 小森林
     light-blue: Mastodon (浅色主题-群青)
     light-cyan: Mastodon（浅色主题-錆浅葱）
@@ -1625,23 +1628,21 @@ zh-CN:
     light-yellow: Mastodon（浅色主题-向日葵）
     luxury: 奢华
     mastodon-light: Mastodon（亮色主题）
+    neoncity: 霓虹都市（透明）    
     new-year: 新年
     nga: NGA风格
     sakura: 樱花
     sleeping-town: 小镇黎明
+    stardew-valley: 星露谷物语    
     strawberry: 草莓
+    to-the-moon: 去月球     
     transparent-aurora: 极光（透明）
     transparent-forest-trace: 林间小道（透明）
     transparent-starry-sky: 星空（透明）
     ubuntu-light: Ubuntu 橙
     ubuntu-terminal: Ubuntu 命令行
-    witches-town: 巫师小镇
-    flora: 芙萝拉    
-    black-cat: 黑猫
-    cafe: 咖啡店
-    neoncity: 霓虹都市（透明）
-    stardew-valley: 星露谷物语
-    to-the-moon: 去月球                
+    witches-town: 巫师小镇 
+               
   time:
     formats:
       default: "%Y年%m月%d日 %H:%M"

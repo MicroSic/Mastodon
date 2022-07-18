@@ -1728,6 +1728,8 @@ en:
     title: "%{instance} Terms of Service and Privacy Policy"
   themes:
     bilibili-light: Bilibili
+    black-cat: Black Cat    
+    cafe: Café    
     contrast: Mastodon (High contrast)
     cybre-light: Cybre Light
     dark-blue: Mastodon (Dark-Blue)
@@ -1739,6 +1741,7 @@ en:
     dark-red: Mastodon (Dark-Red)
     dark-yellow: Mastodon (Dark-Yellow)
     default: Mastodon (Default)
+    flora: Flora     
     forest: Forest
     light-blue: Mastodon (Light-Blue)
     light-cyan: Mastodon (Light-Cyan)
@@ -1750,23 +1753,21 @@ en:
     light-yellow: Mastodon (Light-Yellow)
     luxury: Luxury
     mastodon-light: Mastodon (Light)
+    neoncity: Neon City (Transparent)    
     new-year: New Year
     nga: NGA Style
     sakura: Sakura
     sleeping-town: Sleeping Town
+    stardew-valley: Stardew Valley    
     strawberry: Strawberry
+    to-the-moon: To The Moon    
     transparent-aurora: Aurora (Transparent)
     transparent-forest-trace: Forest Trace (Transparent)
     transparent-starry-sky: Starry Sky (Transparent)
     ubuntu-light: Ubuntu Orange
     ubuntu-terminal: Ubuntu Terminal
-    witches-town: Witches Town
-    flora: Flora    
-    black-cat: Black Cat
-    cafe: Café
-    neoncity: Neon City (Transparent)
-    stardew-valley: Stardew Valley
-    to-the-moon: To The Moon
+    witches-town: Witches Town   
+
   time:
     formats:
       default: "%b %d, %Y, %H:%M"
