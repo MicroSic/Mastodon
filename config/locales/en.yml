@@ -1728,6 +1728,7 @@ en:
     title: "%{instance} Terms of Service and Privacy Policy"
   themes:
     bilibili-light: Bilibili
+    cafe: Café    
     contrast: Mastodon (High contrast)
     cybre-light: Cybre Light
     dark-blue: Mastodon (Dark-Blue)
