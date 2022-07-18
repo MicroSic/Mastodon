@@ -1728,8 +1728,6 @@ en:
     title: "%{instance} Terms of Service and Privacy Policy"
   themes:
     bilibili-light: Bilibili
-    black-cat: Black Cat    
-    cafe: Cafe
     contrast: Mastodon (High contrast)
     cybre-light: Cybre Light
     dark-blue: Mastodon (Dark-Blue)
@@ -1740,8 +1738,7 @@ en:
     dark-purple: Mastodon (Dark-Purple)
     dark-red: Mastodon (Dark-Red)
     dark-yellow: Mastodon (Dark-Yellow)
-    default: Mastodon (Default)
-    flora: Flora     
+    default: Mastodon (Default)   
     forest: Forest
     light-blue: Mastodon (Light-Blue)
     light-cyan: Mastodon (Light-Cyan)
@@ -1752,15 +1749,12 @@ en:
     light-red: Mastodon (Light-Red)
     light-yellow: Mastodon (Light-Yellow)
     luxury: Luxury
-    mastodon-light: Mastodon (Light)
-    neoncity: Neon City (Transparent)    
+    mastodon-light: Mastodon (Light)   
     new-year: New Year
     nga: NGA Style
     sakura: Sakura
-    sleeping-town: Sleeping Town
-    stardew-valley: Stardew Valley    
+    sleeping-town: Sleeping Town   
     strawberry: Strawberry
-    to-the-moon: To The Moon    
     transparent-aurora: Aurora (Transparent)
     transparent-forest-trace: Forest Trace (Transparent)
     transparent-starry-sky: Starry Sky (Transparent)
