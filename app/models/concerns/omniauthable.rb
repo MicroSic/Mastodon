@@ -42,6 +42,9 @@ module Omniauthable
     end
 
     def create_for_oauth(auth)
+      Rails.logger.info "Creating user for #{auth.provider} identity"
+      Rails.logger.info "  auth.info: #{auth.info.to_json}"
+      Rails.logger.info "  auth.uid: #{auth.uid}"
       # Check if the user exists with provided email. If no email was provided,
       # we assign a temporary email and ask the user to verify it on
       # the next step via Auth::SetupController.show
@@ -97,7 +100,22 @@ module Omniauthable
     def ensure_unique_username(auth)
       username = auth.uid
       auth_provided_username = nil
-      i        = 0
+      i        = 1
+      force_use_number_suffix = false
+
+      if %w(github gitee gitlab).include?(auth.provider)
+        auth_provided_username = auth.info.nickname
+      elsif %(azure_oauth2).include?(auth.provider)
+        auth_provided_username = 'azure'
+        force_use_number_suffix = true
+      end
+
+      username = auth_provided_username unless auth_provided_username.nil? || auth_provided_username.empty?
+
+      username = ensure_valid_username(username)
+
+      username = "#{username}_#{i}" if force_use_number_suffix
+      i += 1 if force_use_number_suffix
 
       if auth.provider == 'github'
         auth_provided_username = auth.info.nickname
@@ -125,13 +143,11 @@ module Omniauthable
     end
     
     def trusted_auth_provider(auth)
-      auth.provider == 'github' || auth.provider == 'gitlab'
+      %w(github gitlab gitee azure_oauth2).include?(auth.provider)
     end
 
     def trusted_auth_provider_display_name(auth)
-      if auth.provider == 'github'
-        return auth.info.name
-      elsif auth.provider == 'gitlab'
+      if %w(github gitee gitlab azure_oauth2).include?(auth.provider)
         return auth.info.name
       end
 
@@ -139,10 +155,12 @@ module Omniauthable
     end
 
     def trusted_auth_provider_email(auth)
-      if auth.provider == 'github'
-        return auth.info.email || auth.extra['all_emails'].select{ |email| email.primary? }.email
-      elsif auth.provider == 'gitlab'
+      if %w(gitlab azure_oauth2).include?(auth.provider)
         return auth.info.email
+      elsif %w(github).include?(auth.provider)
+        return auth.info.email || auth.extra['all_emails'].select{ |email| email.primary? }[0]&.email
+      elsif %w(gitee).include?(auth.provider)
+        return auth.info.email || auth.extra['all_emails'].select{ |email| email['scope'].include? 'primary' }[0]&.email
       end
 
       return auth.info.verified_email || auth.info.email

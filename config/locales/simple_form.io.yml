@@ -91,6 +91,9 @@ io:
         name: Vu povas nur chanjar literkaso, por exemplo, por kauzigar lu divenar plu lektebla
       user:
         chosen_languages: Kande marketigesis, nur posti en selektesis lingui montresos en publika tempolinei
+      webhook:
+        events: Selektigez eventi por sendar
+        url: Ibe eventi sendesos
     labels:
       account:
         fields:
@@ -178,6 +181,7 @@ io:
         setting_use_pending_items: Modo lenta
         severity: Severeso
         sign_in_token_attempt: Sekureskodexo
+        title: Titulo
         type: Tipo di importaco
         username: Uzernomo
         username_or_email: Uzantonomo o retposto
@@ -186,6 +190,10 @@ io:
         with_dns_records: Inkluzez registraji MX e IPi di domeno
       featured_tag:
         name: Hashtago
+      filters:
+        actions:
+          hide: Tote celez
+          warn: Celez kun averto
       interactions:
         must_be_follower: Celar la savigi da homi, qui ne sequas tu
         must_be_following: Celar la savigi da homi, quin tu ne sequas
@@ -219,6 +227,9 @@ io:
         name: Hashtago
         trendable: Permisez ca hashtago aparar che tendenci
         usable: Permisez posti uzar ca hashtago
+      webhook:
+        events: Aktivigita eventi
+        url: URL di finpunto
     'no': Ne
     recommended: Rekomendito
     required:
