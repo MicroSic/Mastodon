@@ -59,7 +59,7 @@ export default function listEditorReducer(state = initialState, action) {
     return state.withMutations(map => {
       map.set('isExclusive', action.value);
       map.set('isChanged', true);
-    });    
+    }); 
   case LIST_CREATE_REQUEST:
   case LIST_UPDATE_REQUEST:
     return state.withMutations(map => {

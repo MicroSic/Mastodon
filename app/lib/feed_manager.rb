@@ -352,7 +352,6 @@ class FeedManager
   def filter_from_home?(status, receiver_id, crutches, timeline_type=:home)
     return false if receiver_id == status.account_id
     return true  if status.reply? && (status.in_reply_to_id.nil? || status.in_reply_to_account_id.nil?)
-    return true  if phrase_filtered?(status, receiver_id, :home)
     # hometown: exclusive list rules
     unless timeline_type == :list
       # find all exclusive lists
@@ -360,7 +359,7 @@ class FeedManager
       # is there a list the receiver owns with this account on it? if so, return true
       return true if ListAccount.where(list: @list, account_id: status.account_id).exists?
     end
-
+    
     check_for_blocks = crutches[:active_mentions][status.id] || []
     check_for_blocks.concat([status.account_id])
 

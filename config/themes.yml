@@ -23,7 +23,6 @@ transparent-aurora: styles/transparent-aurora.scss
 witches-town: styles/witches-town.scss
 sleeping-town: styles/sleeping-town.scss
 forest: styles/forest.scss
-# strawberry: styles/strawberry.scss
 new-year: styles/new-year.scss
 nga: styles/nga.scss
 RaRuRe: styles/rarure.scss
@@ -35,7 +34,7 @@ beebear: styles/beebear.scss
 ##luxury: styles/luxury.scss
 # ubuntu-light: styles/ubuntu-light.scss
 ##ubuntu-terminal: styles/ubuntu-terminal.scss
-bilibili-light: styles/bilibili-light.scss
+##bilibili-light: styles/bilibili-light.scss
 # linernotes-dark: styles/linernotes-dark.scss
 # swan-lake: styles/swan-lake.scss
 # cybre: styles/cybre.scss
@@ -44,6 +43,4 @@ bilibili-light: styles/bilibili-light.scss
 # purple-haze: styles/purple-haze.scss
 # geodude: styles/geodude.scss
 # royal-tenenbaums: styles/royal-tenenbaums.scss
-modern-dark: styles/modern-dark.scss
-modern-light: styles/modern-light.scss
-modern-contrast: styles/modern-contrast.scss
+# strawberry: styles/strawberry.scss

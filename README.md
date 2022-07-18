@@ -1,4 +1,5 @@
-**Mastodon fork for <https://toot.tantalum.life>**
+Mastodon fork for [littlefo.rest](https://littlefo.rest)
+===
 
 [![Maintainability](https://api.codeclimate.com/v1/badges/1644d6adc0f9d1bbae6a/maintainability)](https://codeclimate.com/github/mashirozx/mastodon/maintainability)
 [![DockerHub](https://img.shields.io/docker/pulls/mashirozx/mastodon.svg?logo=docker&color=2496ED)](https://hub.docker.com/r/mashirozx/mastodon)

@@ -3108,6 +3108,15 @@ a.account__display-name {
   width: 1px;
 }
 
+label[for="is-exclusive-checkbox"] {
+  margin-left: 20px;
+}
+
+.is-exclusive-checkbox {
+  transform: scale(0.7);
+  transform-origin: bottom;
+}
+
 .react-toggle--disabled {
   cursor: not-allowed;
   opacity: 0.5;

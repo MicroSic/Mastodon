@@ -517,6 +517,7 @@ ActiveRecord::Schema.define(version: 2022_07_04_024901) do
     t.index ["account_id", "list_id"], name: "index_list_accounts_on_account_id_and_list_id", unique: true
     t.index ["follow_id"], name: "index_list_accounts_on_follow_id", where: "(follow_id IS NOT NULL)"
     t.index ["list_id", "account_id"], name: "index_list_accounts_on_list_id_and_account_id"
+    t.boolean "is_exclusive", default: false        
   end
 
   create_table "lists", force: :cascade do |t|
@@ -525,7 +526,6 @@ ActiveRecord::Schema.define(version: 2022_07_04_024901) do
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.integer "replies_policy", default: 0, null: false
-    t.boolean "is_exclusive", default: false    
     t.index ["account_id"], name: "index_lists_on_account_id"
   end
 

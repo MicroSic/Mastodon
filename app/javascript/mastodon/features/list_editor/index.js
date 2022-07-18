@@ -54,7 +54,7 @@ class ListEditor extends ImmutablePureComponent {
 
     return (
       <div className='modal-root__modal list-editor'>
-        <EditListForm isExclusive={this.props.isExclusive} />
+      <EditListForm isExclusive={this.props.isExclusive} />
 
         <Search />
 
