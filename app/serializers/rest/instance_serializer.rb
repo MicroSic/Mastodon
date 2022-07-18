@@ -104,14 +104,6 @@ class REST::InstanceSerializer < ActiveModel::Serializer
     StatusLengthValidator::MAX_CHARS
   end
 
-  def feature_quote
-    true
-  end
-
-  def max_toot_chars
-    StatusLengthValidator::MAX_CHARS
-  end
-
   private
 
   def instance_presenter

@@ -293,8 +293,6 @@ class MediaAttachment < ApplicationRecord
         [:transcoder, :blurhash_transcoder, :type_corrector]
       elsif AUDIO_MIME_TYPES.include?(instance.file_content_type)
         [:image_extractor, :transcoder, :type_corrector]
-      elsif IMAGE_CONVERTIBLE_MIME_TYPES.include?(instance.file_content_type)
-        [:img_converter, :lazy_thumbnail, :blurhash_transcoder, :type_corrector]
       else
         [:lazy_thumbnail, :blurhash_transcoder, :type_corrector]
       end

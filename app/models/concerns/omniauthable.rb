@@ -117,16 +117,6 @@ module Omniauthable
       username = "#{username}_#{i}" if force_use_number_suffix
       i += 1 if force_use_number_suffix
 
-      if auth.provider == 'github'
-        auth_provided_username = auth.info.nickname
-      elsif auth.provider == 'gitlab'
-        auth_provided_username = auth.info.username
-      end
-
-      username = auth_provided_username unless auth_provided_username.nil? || auth_provided_username.empty?
-
-      username = ensure_valid_username(username)
-
       while Account.exists?(username: username, domain: nil)
         i       += 1
         username = "#{auth_provided_username || auth.uid}_#{i}"
