@@ -1636,6 +1636,12 @@ zh-CN:
     ubuntu-light: Ubuntu 橙
     ubuntu-terminal: Ubuntu 命令行
     witches-town: 巫师小镇
+    flora: 芙萝拉    
+    black-cat: 黑猫
+    cafe: 咖啡店
+    neoncity: 霓虹都市（透明）
+    stardew-valley: 星露谷物语
+    to-the-moon: 去月球                
   time:
     formats:
       default: "%Y年%m月%d日 %H:%M"

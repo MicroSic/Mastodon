@@ -1761,6 +1761,12 @@ en:
     ubuntu-light: Ubuntu Orange
     ubuntu-terminal: Ubuntu Terminal
     witches-town: Witches Town
+    flora: Flora    
+    black-cat: Black Cat
+    cafe: Café
+    neoncity: Neon City (Transparent)
+    stardew-valley: Stardew Valley
+    to-the-moon: To The Moon
   time:
     formats:
       default: "%b %d, %Y, %H:%M"
